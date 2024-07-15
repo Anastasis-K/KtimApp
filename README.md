@@ -51,13 +51,13 @@ The script is designed to work with the following structure:
 
 .
 
-├── ktim_app.py
+├── KtimApp.py
 
 ├── ΑΡΧΕΙΟ ΚΤΗΜΑΤΟΛΟΓΙΟΥ/
 
-│   └── <KAEK>/
+│   └── *KAEK*/
 
-│       ├── <KAEK>_ΛΕΙΤΟΥΡΓΟΥΝ.dxf
+│       ├── *KAEK*_ΛΕΙΤΟΥΡΓΟΥΝ.dxf
 
 │       ├── <KAEK>_ΑΝΑΡΤΗΣΗ.dxf
 
