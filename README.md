@@ -77,13 +77,13 @@ Code Overview
 
 Functions
 - 'ktima_driver(my_kaek: str)': Sets up the Chrome driver with the specified preferences.
-- clicker(my_driver, my_xpath: str): Clicks the element identified by the given XPath.
-- typewriter(my_driver, my_xpath: str, my_text: str): Sends the specified text to the element identified by the given XPath.
-- attribute_getter(my_driver, my_xpath: str) -> str: Retrieves the value attribute of the element identified by the given XPath.
-- coord_translator(text_of_coord: str) -> list: Translates text coordinates into a list of tuples.
-- polyline_draw(name: str, points: (list, tuple)): Creates and saves a DXF file from a list of points.
-- image_loader(my_driver, my_xpath: str): Checks if an image is loaded.
-- kaek_handler(my_driver, my_kaek: str, cadastre_phase_key: str, cdastre_phase_value: str): Handles the KAEK search and saves the results.
+- 'clicker(my_driver, my_xpath: str)': Clicks the element identified by the given XPath.
+- 'typewriter(my_driver, my_xpath: str, my_text: str)': Sends the specified text to the element identified by the given XPath.
+- 'attribute_getter(my_driver, my_xpath: str) -> str': Retrieves the value attribute of the element identified by the given XPath.
+- 'coord_translator(text_of_coord: str) -> list': Translates text coordinates into a list of tuples.
+- 'polyline_draw(name: str, points': (list, tuple))': Creates and saves a DXF file from a list of points.
+- 'image_loader(my_driver, my_xpath: str)': Checks if an image is loaded.
+- 'kaek_handler(my_driver, my_kaek: str, cadastre_phase_key: str, cdastre_phase_value: str)': Handles the KAEK search and saves the results.
 
 
 Main Flow
