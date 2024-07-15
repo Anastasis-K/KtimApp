@@ -58,14 +58,14 @@ The script is designed to work with the following structure:
 │   └── *-KAEK-*/
 
 │       ├── *-KAEK-*_ΛΕΙΤΟΥΡΓΟΥΝ.dxf
+
 │       ├── *-KAEK-*_ΛΕΙΤΟΥΡΓΟΥΝ.pdf
+
 │       ├── *-KAEK-*_ΑΝΑΡΤΗΣΗ.dxf
 
-│       ├── *-KAEK-*_ΠΡΟΑΝΑΡΤΗΣΗ.dxf
-
-
-
 │       ├── *-KAEK-*_ΑΝΑΡΤΗΣΗ.pdf
+
+│       ├── *-KAEK-*_ΠΡΟΑΝΑΡΤΗΣΗ.dxf
 
 │       └── *-KAEK-*_ΠΡΟΑΝΑΡΤΗΣΗ.pdf
 
