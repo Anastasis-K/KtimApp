@@ -177,9 +177,3 @@ if __name__ == "__main__":
         kaek_handler(my_driver=driver, my_kaek=kaek, cadastre_phase_key=key, cdastre_phase_value=value)
 
     driver.quit()
-
-    # testing
-    # list_of_kaek = ["050912502005", "050095701001", "050912502004", "050321701026", "350246609016", "350310118045"]
-    # for kaek in list_of_kaek:
-    #     driver_starter(kaek)
-    # kaek = "350246609016"
