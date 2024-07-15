@@ -25,6 +25,7 @@ Installation
 1. Clone the repository:
 
 git clone https://github.com/Anastasis-K/ktimapp.git
+
 cd ktimapp
 
 2. Install the required Python libraries:
