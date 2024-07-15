@@ -55,19 +55,19 @@ The script is designed to work with the following structure:
 
 ├── ΑΡΧΕΙΟ ΚΤΗΜΑΤΟΛΟΓΙΟΥ/
 
-│   └── *(KAEK)*/
+│   └── *-KAEK-*/
 
-│       ├── <<KAEK>>_ΛΕΙΤΟΥΡΓΟΥΝ.dxf
+│       ├── *-KAEK-*_ΛΕΙΤΟΥΡΓΟΥΝ.dxf
 
-│       ├── <KAEK>_ΑΝΑΡΤΗΣΗ.dxf
+│       ├── *-KAEK-*_ΑΝΑΡΤΗΣΗ.dxf
 
-│       ├── <KAEK>_ΠΡΟΑΝΑΡΤΗΣΗ.dxf
+│       ├── *-KAEK-*_ΠΡΟΑΝΑΡΤΗΣΗ.dxf
 
-│       ├── <KAEK>_ΛΕΙΤΟΥΡΓΟΥΝ.pdf
+│       ├── *-KAEK-*_ΛΕΙΤΟΥΡΓΟΥΝ.pdf
 
-│       ├── <KAEK>_ΑΝΑΡΤΗΣΗ.pdf
+│       ├── *-KAEK-*_ΑΝΑΡΤΗΣΗ.pdf
 
-│       └── <KAEK>_ΠΡΟΑΝΑΡΤΗΣΗ.pdf
+│       └── **KAEK**_ΠΡΟΑΝΑΡΤΗΣΗ.pdf
 
 The script will automatically create the required directories and save the output files in the appropriate locations.
 
