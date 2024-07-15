@@ -3,45 +3,45 @@ KtimApp
 KtimApp is a Python script designed to automate the process of retrieving and processing cadastre data from the Greek cadastre website. The script uses Selenium for web automation and ezdxf for creating DXF files from the retrieved coordinates.
 
 Features
-Automates the search for cadastral data using a given KAEK (Κωδικός Αριθμός Εθνικού Κτηματολογίου).
-Retrieves and processes coordinates from the cadastral system.
-Generates DXF files from the coordinates.
-Downloads cadastral diagrams as PDF files.
-Prerequisites
-Python 3.x
-Google Chrome
-ChromeDriver (compatible with your Chrome version)
-Selenium
-ezdxf library
-Installation
-Clone the repository:
+- Automates the search for cadastral data using a given KAEK (Κωδικός Αριθμός Εθνικού Κτηματολογίου).
+- Retrieves and processes coordinates from the cadastral system.
+- Generates DXF files from the coordinates.
+- Downloads cadastral diagrams as PDF files.
 
-bash
-Αντιγραφή κώδικα
+Prerequisites
+- Python 3.x
+- Google Chrome
+- ChromeDriver (compatible with your Chrome version)
+- Selenium
+- ezdxf library
+
+Installation
+
+1.Clone the repository:
+
 git clone https://github.com/yourusername/ktimapp.git
 cd ktimapp
-Install the required Python libraries:
 
-bash
-Αντιγραφή κώδικα
+2. Install the required Python libraries:
+
 pip install selenium ezdxf
-Download and install ChromeDriver and ensure it is in your PATH or specify its location in the script.
+
+3. Download and install ChromeDriver and ensure it is in your PATH or specify its location in the script.
 
 Usage
-Prepare your environment by setting up the directory structure and downloading ChromeDriver.
 
-Modify the kaek variable in the script or use the list of KAEKs to process multiple KAEKs.
+1. Prepare your environment by setting up the directory structure and downloading ChromeDriver.
 
-Run the script:
+2. Modify the kaek variable in the script or use the list of KAEKs to process multiple KAEKs.
 
-bash
-Αντιγραφή κώδικα
+3. Run the script:
+
 python ktim_app.py
+
 Example
+
 The script is designed to work with the following structure:
 
-plaintext
-Αντιγραφή κώδικα
 .
 ├── ktim_app.py
 
@@ -50,16 +50,22 @@ plaintext
 │   └── <KAEK>/
 
 │       ├── <KAEK>_ΛΕΙΤΟΥΡΓΟΥΝ.dxf
+
 │       ├── <KAEK>_ΑΝΑΡΤΗΣΗ.dxf
+
 │       ├── <KAEK>_ΠΡΟΑΝΑΡΤΗΣΗ.dxf
+
 │       ├── <KAEK>_ΛΕΙΤΟΥΡΓΟΥΝ.pdf
+
 │       ├── <KAEK>_ΑΝΑΡΤΗΣΗ.pdf
+
 │       └── <KAEK>_ΠΡΟΑΝΑΡΤΗΣΗ.pdf
+
 The script will automatically create the required directories and save the output files in the appropriate locations.
 
 Code Overview
 Functions
-ktima_driver_starter(my_kaek: str): Sets up the Chrome driver with the specified preferences.
+- 'ktima_driver_starter(my_kaek: str)': Sets up the Chrome driver with the specified preferences.
 clicker(my_driver, my_xpath: str): Clicks the element identified by the given XPath.
 typewriter(my_driver, my_xpath: str, my_text: str): Sends the specified text to the element identified by the given XPath.
 attribute_getter(my_driver, my_xpath: str) -> str: Retrieves the value attribute of the element identified by the given XPath.
