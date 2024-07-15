@@ -44,38 +44,52 @@ Example
 
 The script is designed to work with the following structure:
 
-plaintext
-Αντιγραφή κώδικα
 .
+
 ├── ktim_app.py
+
 ├── ΑΡΧΕΙΟ ΚΤΗΜΑΤΟΛΟΓΙΟΥ/
+
 │   └── <KAEK>/
+
 │       ├── <KAEK>_ΛΕΙΤΟΥΡΓΟΥΝ.dxf
+
 │       ├── <KAEK>_ΑΝΑΡΤΗΣΗ.dxf
+
 │       ├── <KAEK>_ΠΡΟΑΝΑΡΤΗΣΗ.dxf
+
 │       └── <KAEK>_<PHASE>.pdf
+
 The script will automatically create the required directories and save the output files in the appropriate locations.
 
 Code Overview
+
 Functions
-ktima_driver(my_kaek: str): Sets up the Chrome driver with the specified preferences.
-clicker(my_driver, my_xpath: str): Clicks the element identified by the given XPath.
-typewriter(my_driver, my_xpath: str, my_text: str): Sends the specified text to the element identified by the given XPath.
-attribute_getter(my_driver, my_xpath: str) -> str: Retrieves the value attribute of the element identified by the given XPath.
-coord_translator(text_of_coord: str) -> list: Translates text coordinates into a list of tuples.
-polyline_draw(name: str, points: (list, tuple)): Creates and saves a DXF file from a list of points.
-image_loader(my_driver, my_xpath: str): Checks if an image is loaded.
-kaek_handler(my_driver, my_kaek: str, cadastre_phase_key: str, cdastre_phase_value: str): Handles the KAEK search and saves the results.
+- ktima_driver(my_kaek: str): Sets up the Chrome driver with the specified preferences.
+- clicker(my_driver, my_xpath: str): Clicks the element identified by the given XPath.
+- typewriter(my_driver, my_xpath: str, my_text: str): Sends the specified text to the element identified by the given XPath.
+- attribute_getter(my_driver, my_xpath: str) -> str: Retrieves the value attribute of the element identified by the given XPath.
+- coord_translator(text_of_coord: str) -> list: Translates text coordinates into a list of tuples.
+- polyline_draw(name: str, points: (list, tuple)): Creates and saves a DXF file from a list of points.
+- image_loader(my_driver, my_xpath: str): Checks if an image is loaded.
+- kaek_handler(my_driver, my_kaek: str, cadastre_phase_key: str, cdastre_phase_value: str): Handles the KAEK search and saves the results.
+
 Main Flow
-Initialize the driver and navigate to the cadastral website.
-Perform searches for each KAEK and handle the results for different cadastral phases (ΛΕΙΤΟΥΡΓΟΥΝ, ΑΝΑΡΤΗΣΗ, ΠΡΟΑΝΑΡΤΗΣΗ).
-Retrieve coordinates and save them as DXF files.
-Download cadastral diagrams as PDF files.
+
+1. Initialize the driver and navigate to the cadastral website.
+2. Perform searches for each KAEK and handle the results for different cadastral phases (ΛΕΙΤΟΥΡΓΟΥΝ, ΑΝΑΡΤΗΣΗ, ΠΡΟΑΝΑΡΤΗΣΗ).
+3. Retrieve coordinates and save them as DXF files.
+4. Download cadastral diagrams as PDF files.
+
 Notes
-Ensure ChromeDriver is compatible with your installed version of Google Chrome.
-The script includes various checks to ensure elements are present before interacting with them, making it robust against changes in page load times and element availability.
+
+- Ensure ChromeDriver is compatible with your installed version of Google Chrome.
+- The script includes various checks to ensure elements are present before interacting with them, making it robust against changes in page load times and element     availability.
+
 Contributing
+
 Feel free to open issues or submit pull requests for any improvements or bug fixes.
 
 License
+
 This project is licensed under the MIT License. See the LICENSE file for details.
