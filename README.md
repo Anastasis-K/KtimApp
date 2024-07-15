@@ -7,7 +7,7 @@ Features
 
 - Automates the search for cadastral data using a given KAEK (Κωδικός Αριθμός Εθνικού Κτηματολογίου).
 - Retrieves and processes coordinates from the cadastral system.
-- Generates DXF files from the coordinates.
+- Generates DXF files containing polylines created from the coordinates.
 - Downloads cadastral diagrams as PDF files.
 
 
@@ -38,11 +38,11 @@ Usage
 
 1. Prepare your environment by setting up the directory structure and downloading ChromeDriver.
 
-2. Modify the kaek variable in the script or use the list of KAEKs to process multiple KAEKs.
-
-3. Run the script:
+2. Run the script:
 
 python ktim_app.py
+
+3. Input the kaek variable.
 
 
 Example
@@ -58,12 +58,12 @@ The script is designed to work with the following structure:
 │   └── *-KAEK-*/
 
 │       ├── *-KAEK-*_ΛΕΙΤΟΥΡΓΟΥΝ.dxf
-
+│       ├── *-KAEK-*_ΛΕΙΤΟΥΡΓΟΥΝ.pdf
 │       ├── *-KAEK-*_ΑΝΑΡΤΗΣΗ.dxf
 
 │       ├── *-KAEK-*_ΠΡΟΑΝΑΡΤΗΣΗ.dxf
 
-│       ├── *-KAEK-*_ΛΕΙΤΟΥΡΓΟΥΝ.pdf
+
 
 │       ├── *-KAEK-*_ΑΝΑΡΤΗΣΗ.pdf
 
