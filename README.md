@@ -67,7 +67,7 @@ The script is designed to work with the following structure:
 
 │       ├── *-KAEK-*_ΑΝΑΡΤΗΣΗ.pdf
 
-│       └── **KAEK**_ΠΡΟΑΝΑΡΤΗΣΗ.pdf
+│       └── *KAEK*_ΠΡΟΑΝΑΡΤΗΣΗ.pdf
 
 The script will automatically create the required directories and save the output files in the appropriate locations.
 
