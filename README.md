@@ -55,9 +55,9 @@ The script is designed to work with the following structure:
 
 ├── ΑΡΧΕΙΟ ΚΤΗΜΑΤΟΛΟΓΙΟΥ/
 
-│   └── *KAEK*/
+│   └── *(KAEK)*/
 
-│       ├── *KAEK*_ΛΕΙΤΟΥΡΓΟΥΝ.dxf
+│       ├── <<KAEK>>_ΛΕΙΤΟΥΡΓΟΥΝ.dxf
 
 │       ├── <KAEK>_ΑΝΑΡΤΗΣΗ.dxf
 
