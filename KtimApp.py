@@ -80,7 +80,7 @@ def coord_translator(text_of_coord: str) -> list:
     coords_mixed = text_of_coord.split('@')[4].split('=')
     x_coords = [float(x) for x in coords_mixed[0].split("~")]
     y_coords = [float(y) for y in coords_mixed[1].split("~") if y]
-    return zip(x_coords, y_coords)
+    return list(zip(x_coords, y_coords))
 
 
 def polyline_draw(name: str, points: (list, tuple)):
