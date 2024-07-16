@@ -15,8 +15,7 @@ def ktima_driver(my_kaek: str):
     :param my_kaek: (str) the given 'KAEK'
     :return: the chrome driver ready to use
     """
-    save_path = os.path.join(os.getcwd(), "ΑΡΧΕΙΟ ΚΤΗΜΑ"
-                                          "ΤΟΛΟΓΙΟΥ", my_kaek)
+    save_path = os.path.join(os.getcwd(), "ΑΡΧΕΙΟ ΚΤΗΜΑΤΟΛΟΓΙΟΥ", my_kaek)
     os.makedirs(save_path, exist_ok=True)
 
     prefs = {
